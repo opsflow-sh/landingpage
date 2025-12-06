@@ -17,17 +17,17 @@ export default function Index() {
             ✨ The Future of Agentic Operations
           </div>
 
+          <div className="mb-8 flex justify-center animate-fade-in">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Ff5c6bb0e22854d8890f1f6f00ee99a02?format=webp&width=800"
+              alt="OpsFlow Bot Mascot"
+              className="w-32 h-32 md:w-48 md:h-48"
+            />
+          </div>
+
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight animate-fade-in">
             Intelligent Automation for <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Modern Ops</span>
           </h1>
-
-          <div className="mb-8 flex justify-center animate-fade-in">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Fc6a0fc7ae33d4ad7a51750ccd919b7a6?format=webp&width=300"
-              alt="OpsFlow Bot Mascot"
-              className="w-32 h-32 md:w-40 md:h-40"
-            />
-          </div>
 
           <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-8 animate-fade-in">
             Build and orchestrate autonomous agents for sophisticated operational workflows. Transform how your organization operates with intelligent automation.
