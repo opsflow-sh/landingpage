@@ -67,8 +67,8 @@ const Footer = () => {
   return (
     <footer className="border-t border-border/40 bg-muted/30">
       <div className="container mx-auto max-w-7xl px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-8">
+          <div className="flex flex-col justify-start">
             <div className="mb-4 flex justify-start">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Fe34854392309440c898cf025aeae71c4?format=webp&width=800"
@@ -81,7 +81,7 @@ const Footer = () => {
               Building the future of Agentic Ops Workflows
             </p>
           </div>
-          <div>
+          <div className="flex flex-col justify-start">
             <h4 className="font-semibold text-foreground mb-4">Products</h4>
             <ul className="space-y-2">
               <li>
@@ -102,7 +102,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="flex flex-col justify-start">
             <h4 className="font-semibold text-foreground mb-4">Community</h4>
             <ul className="space-y-2">
               <li>
@@ -123,19 +123,17 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <div className="flex flex-col items-center gap-3">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/4/46/Make_In_India.png"
-                alt="Make in India, Built for World Logo"
-                className="h-16 w-auto"
-              />
-              <p className="text-xs text-center text-foreground/60">
-                Made in India,<br />Built for the World
-              </p>
-            </div>
+          <div className="flex flex-col justify-center items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/4/46/Make_In_India.png"
+              alt="Make in India, Built for World Logo"
+              className="h-20 w-auto mb-3"
+            />
+            <p className="text-xs text-center text-foreground/60">
+              Made in India,<br />Built for the World
+            </p>
           </div>
-          <div>
+          <div className="flex flex-col justify-start">
             <h4 className="font-semibold text-foreground mb-4">Connect</h4>
             <div className="flex gap-4">
               <a
