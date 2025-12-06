@@ -19,7 +19,7 @@ export default function Index() {
 
           <div className="flex justify-center animate-fade-in">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Ff5c6bb0e22854d8890f1f6f00ee99a02?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Fe34854392309440c898cf025aeae71c4?format=webp&width=800"
               alt="OpsFlow Bot Mascot"
               className="w-32 h-32 md:w-48 md:h-48"
             />
