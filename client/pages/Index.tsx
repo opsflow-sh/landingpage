@@ -1,5 +1,13 @@
 import { Layout } from "@/components/Layout";
-import { ArrowRight, Zap, Brain, Users, Cpu, Github, ExternalLink } from "lucide-react";
+import {
+  ArrowRight,
+  Zap,
+  Brain,
+  Users,
+  Cpu,
+  Github,
+  ExternalLink,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Index() {
@@ -26,11 +34,16 @@ export default function Index() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight animate-fade-in">
-            Intelligent Automation for <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Modern Ops</span>
+            Intelligent Automation for{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+              Modern Ops
+            </span>
           </h1>
 
           <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-8 animate-fade-in">
-            Your intelligent copilot for complex operations. Agents that augment human expertise, amplify your team's capabilities, and put you in control of every decision.
+            Your intelligent copilot for complex operations. Agents that augment
+            human expertise, amplify your team's capabilities, and put you in
+            control of every decision.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in">
@@ -69,7 +82,9 @@ export default function Index() {
               KubeAgentics
             </h2>
             <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-              The only desktop-based Agentic Kubernetes Copilot. Bring intelligent automation directly to your operations with a powerful, integrated agentic interface.
+              The only desktop-based Agentic Kubernetes Copilot. Bring
+              intelligent automation directly to your operations with a
+              powerful, integrated agentic interface.
             </p>
           </div>
 
@@ -78,7 +93,9 @@ export default function Index() {
               <div className="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl p-12 flex items-center justify-center min-h-80">
                 <div className="text-center">
                   <Cpu className="w-24 h-24 text-primary mx-auto mb-4" />
-                  <p className="text-foreground/60">Kubernetes-native agent orchestration</p>
+                  <p className="text-foreground/60">
+                    Kubernetes-native agent orchestration
+                  </p>
                 </div>
               </div>
             </div>
@@ -89,7 +106,9 @@ export default function Index() {
                   Intelligent Ops at Your Fingertips
                 </h3>
                 <p className="text-foreground/70">
-                  A unified desktop environment that transforms how you manage Kubernetes operations with AI-powered decision making and execution control.
+                  A unified desktop environment that transforms how you manage
+                  Kubernetes operations with AI-powered decision making and
+                  execution control.
                 </p>
               </div>
 
@@ -155,7 +174,9 @@ export default function Index() {
                 Agentic Ops Alliance
               </h3>
               <p className="text-foreground/70 mb-6">
-                Join industry leaders building the standards and best practices for agentic operations. Collaborate on frameworks, guidelines, and shared solutions.
+                Join industry leaders building the standards and best practices
+                for agentic operations. Collaborate on frameworks, guidelines,
+                and shared solutions.
               </p>
               <Link
                 to="/community"
@@ -175,7 +196,9 @@ export default function Index() {
                 Agentic Ops Community
               </h3>
               <p className="text-foreground/70 mb-6">
-                Connect with developers and operators building with agentic systems. Share experiences, ask questions, and grow together with thousands of community members.
+                Connect with developers and operators building with agentic
+                systems. Share experiences, ask questions, and grow together
+                with thousands of community members.
               </p>
               <Link
                 to="/community"
@@ -195,7 +218,9 @@ export default function Index() {
                 Agentic Ops Command Center
               </h3>
               <p className="text-foreground/70 mb-6">
-                Coming soon: Enterprise platform for managing and monitoring agentic workflows at scale. Centralized control, real-time insights, and intelligent automation orchestration.
+                Coming soon: Enterprise platform for managing and monitoring
+                agentic workflows at scale. Centralized control, real-time
+                insights, and intelligent automation orchestration.
               </p>
               <button className="inline-flex items-center gap-2 text-primary font-semibold opacity-60 cursor-not-allowed">
                 Coming Soon
@@ -211,7 +236,9 @@ export default function Index() {
                 Advanced Capabilities
               </h3>
               <p className="text-foreground/70 mb-6">
-                Sophisticated agent reasoning, multi-step workflows, failure recovery, and advanced observability. Built for complex operational challenges.
+                Sophisticated agent reasoning, multi-step workflows, failure
+                recovery, and advanced observability. Built for complex
+                operational challenges.
               </p>
               <Link
                 to="/products"
@@ -233,7 +260,8 @@ export default function Index() {
               Why Agentic Ops?
             </h2>
             <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-              The operational landscape is changing. Agentic systems are the future.
+              The operational landscape is changing. Agentic systems are the
+              future.
             </p>
           </div>
 
@@ -291,7 +319,8 @@ export default function Index() {
             Ready to Transform Your Operations?
           </h2>
           <p className="text-lg text-foreground/70 mb-8 max-w-2xl mx-auto">
-            Join hundreds of organizations building the future of intelligent operations. Start with kubeagentics today.
+            Join hundreds of organizations building the future of intelligent
+            operations. Start with kubeagentics today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-8 py-4 rounded-lg bg-sky-400/60 text-white font-semibold hover:bg-sky-400/80 transition-all transform hover:-translate-y-1">

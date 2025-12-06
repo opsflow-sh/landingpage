@@ -25,7 +25,8 @@ const NotFound = () => {
             Page Not Found
           </h2>
           <p className="text-lg text-foreground/70 mb-8 max-w-2xl mx-auto">
-            Sorry, the page you're looking for doesn't exist. But you can explore our platform or return home.
+            Sorry, the page you're looking for doesn't exist. But you can
+            explore our platform or return home.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

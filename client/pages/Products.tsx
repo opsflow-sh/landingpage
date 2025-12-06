@@ -18,7 +18,8 @@ export default function Products() {
           </h1>
 
           <p className="text-xl text-foreground/70 mb-12 max-w-2xl mx-auto">
-            Comprehensive solutions for building and managing agentic workflows at scale
+            Comprehensive solutions for building and managing agentic workflows
+            at scale
           </p>
 
           <div className="bg-card/50 rounded-xl border border-border/40 p-12 mb-12">
@@ -26,7 +27,8 @@ export default function Products() {
               Ready to explore our products?
             </h2>
             <p className="text-foreground/70 mb-8">
-              Continue chatting with us on the left to fill in this page with detailed product information and specifications.
+              Continue chatting with us on the left to fill in this page with
+              detailed product information and specifications.
             </p>
             <button
               onClick={() => navigate("/")}
@@ -39,13 +41,18 @@ export default function Products() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-lg border border-border/40 bg-card/30 text-left">
-              <h3 className="text-lg font-bold text-foreground mb-2">kubeagentics</h3>
+              <h3 className="text-lg font-bold text-foreground mb-2">
+                kubeagentics
+              </h3>
               <p className="text-foreground/70 text-sm">
-                Open-source platform for deploying autonomous agents on Kubernetes
+                Open-source platform for deploying autonomous agents on
+                Kubernetes
               </p>
             </div>
             <div className="p-6 rounded-lg border border-border/40 bg-card/30 text-left">
-              <h3 className="text-lg font-bold text-foreground mb-2">Command Center</h3>
+              <h3 className="text-lg font-bold text-foreground mb-2">
+                Command Center
+              </h3>
               <p className="text-foreground/70 text-sm">
                 Enterprise platform for managing agentic workflows (Coming soon)
               </p>

@@ -26,7 +26,8 @@ export default function Docs() {
               Learn & Build
             </h2>
             <p className="text-foreground/70 mb-8">
-              Continue chatting with us on the left to fill in this page with guides, tutorials, API documentation, and more.
+              Continue chatting with us on the left to fill in this page with
+              guides, tutorials, API documentation, and more.
             </p>
             <button
               onClick={() => navigate("/")}
@@ -39,19 +40,25 @@ export default function Docs() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-6 rounded-lg border border-border/40 bg-card/30 text-left">
-              <h3 className="text-lg font-bold text-foreground mb-2">Getting Started</h3>
+              <h3 className="text-lg font-bold text-foreground mb-2">
+                Getting Started
+              </h3>
               <p className="text-foreground/70 text-sm">
                 Quick setup guides and first steps
               </p>
             </div>
             <div className="p-6 rounded-lg border border-border/40 bg-card/30 text-left">
-              <h3 className="text-lg font-bold text-foreground mb-2">API Reference</h3>
+              <h3 className="text-lg font-bold text-foreground mb-2">
+                API Reference
+              </h3>
               <p className="text-foreground/70 text-sm">
                 Complete API documentation and examples
               </p>
             </div>
             <div className="p-6 rounded-lg border border-border/40 bg-card/30 text-left">
-              <h3 className="text-lg font-bold text-foreground mb-2">Tutorials</h3>
+              <h3 className="text-lg font-bold text-foreground mb-2">
+                Tutorials
+              </h3>
               <p className="text-foreground/70 text-sm">
                 In-depth guides for common workflows
               </p>

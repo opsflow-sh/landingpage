@@ -26,7 +26,8 @@ export default function Community() {
               Connect & Collaborate
             </h2>
             <p className="text-foreground/70 mb-8">
-              Continue chatting with us on the left to fill in this page with community resources, forums, and ways to get involved.
+              Continue chatting with us on the left to fill in this page with
+              community resources, forums, and ways to get involved.
             </p>
             <button
               onClick={() => navigate("/")}
