@@ -30,7 +30,7 @@ export default function Products() {
             </p>
             <button
               onClick={() => navigate("/")}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400/60 text-white font-semibold hover:bg-sky-400/80 transition-colors"
             >
               Back to Home
               <ArrowRight className="w-4 h-4" />
