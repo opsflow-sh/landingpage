@@ -69,7 +69,7 @@ export default function Index() {
               KubeAgentics
             </h2>
             <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-              Our flagship open-source product for deploying and managing autonomous agents on Kubernetes clusters
+              The only desktop-based Agentic Kubernetes OpsPilot. Bring intelligent automation directly to your operations with a powerful, integrated agentic interface.
             </p>
           </div>
 
