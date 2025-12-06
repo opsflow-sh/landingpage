@@ -86,20 +86,20 @@ export default function Index() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">
-                  Deploy Agents at Scale
+                  Intelligent Ops at Your Fingertips
                 </h3>
                 <p className="text-foreground/70">
-                  Run intelligent autonomous agents on your Kubernetes infrastructure with production-grade reliability and observability.
+                  A unified desktop environment that transforms how you manage Kubernetes operations with AI-powered decision making and execution control.
                 </p>
               </div>
 
               <ul className="space-y-3">
                 {[
-                  "Kubernetes-first architecture",
-                  "Automatic scaling and load balancing",
-                  "Built-in monitoring and logging",
-                  "Multi-agent orchestration",
-                  "Easy integration with existing systems",
+                  "Agentic Ops Modes: Chat, QuickDX, RCA, Runbooks, Scan",
+                  "MCP-based Agentic Tooling for extensibility",
+                  "Unique agentic interface integrated into dashboard",
+                  "Works with any AI provider and local models (Ollama, Docker)",
+                  "Terminal integration for human-in-control workflows",
                 ].map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-1">
