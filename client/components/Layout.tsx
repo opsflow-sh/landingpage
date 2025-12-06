@@ -53,7 +53,7 @@ const Header = () => {
           >
             <Github className="w-5 h-5" />
           </a>
-          <button className="hidden md:inline-block px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors">
+          <button className="hidden md:inline-block px-4 py-2 rounded-lg bg-sky-400/60 text-white text-sm font-medium hover:bg-sky-400/80 transition-colors">
             Get Started
           </button>
         </div>

@@ -26,7 +26,7 @@ export default function Index() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in">
-            <button className="px-8 py-4 rounded-lg bg-gradient-to-r from-primary to-secondary text-primary-foreground font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all transform hover:-translate-y-1">
+            <button className="px-8 py-4 rounded-lg bg-sky-400/60 text-white font-semibold hover:bg-sky-400/80 transition-all transform hover:-translate-y-1">
               Start Building Free
               <ArrowRight className="w-4 h-4 inline-block ml-2" />
             </button>
@@ -105,7 +105,7 @@ export default function Index() {
               <div className="flex gap-4 pt-4">
                 <Link
                   to="/products"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400/60 text-white font-semibold hover:bg-sky-400/80 transition-colors"
                 >
                   Learn More
                   <ArrowRight className="w-4 h-4" />
@@ -286,7 +286,7 @@ export default function Index() {
             Join hundreds of organizations building the future of intelligent operations. Start with kubeagentics today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 rounded-lg bg-gradient-to-r from-primary to-secondary text-primary-foreground font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all transform hover:-translate-y-1">
+            <button className="px-8 py-4 rounded-lg bg-sky-400/60 text-white font-semibold hover:bg-sky-400/80 transition-all transform hover:-translate-y-1">
               Get Started Free
               <ArrowRight className="w-4 h-4 inline-block ml-2" />
             </button>
