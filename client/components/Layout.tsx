@@ -11,10 +11,11 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
-          <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-secondary">
-            <span className="text-sm font-bold text-white">⚙️</span>
-          </div>
-          <span className="text-lg font-bold text-foreground">OpsFlow</span>
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2F30e97fd5820d44dcaf28ca0994b49f66?format=webp&width=200"
+            alt="OpsFlow.sh"
+            className="h-8"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
