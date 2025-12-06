@@ -12,7 +12,7 @@ const Header = () => {
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2F30e97fd5820d44dcaf28ca0994b49f66?format=webp&width=200"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Ff3ce7f74d6fa4e8ba867dfa0afd51b99"
             alt="OpsFlow.sh"
             className="h-8"
           />
@@ -148,7 +148,7 @@ const Footer = () => {
         </div>
         <div className="border-t border-border/40 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-foreground/60">
-            © 2024 OpsFlow.sh. All rights reserved.
+            © 2025 OpsFlow.sh. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a
