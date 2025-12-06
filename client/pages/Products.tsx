@@ -1,0 +1,58 @@
+import { Layout } from "@/components/Layout";
+import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
+export default function Products() {
+  const navigate = useNavigate();
+
+  return (
+    <Layout>
+      <div className="py-20 md:py-32">
+        <div className="container mx-auto max-w-4xl px-4 text-center">
+          <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+            📦 Products
+          </div>
+
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Our Products
+          </h1>
+
+          <p className="text-xl text-foreground/70 mb-12 max-w-2xl mx-auto">
+            Comprehensive solutions for building and managing agentic workflows at scale
+          </p>
+
+          <div className="bg-card/50 rounded-xl border border-border/40 p-12 mb-12">
+            <h2 className="text-2xl font-bold text-foreground mb-4">
+              Ready to explore our products?
+            </h2>
+            <p className="text-foreground/70 mb-8">
+              Continue chatting with us on the left to fill in this page with detailed product information and specifications.
+            </p>
+            <button
+              onClick={() => navigate("/")}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
+            >
+              Back to Home
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="p-6 rounded-lg border border-border/40 bg-card/30 text-left">
+              <h3 className="text-lg font-bold text-foreground mb-2">kubeagentics</h3>
+              <p className="text-foreground/70 text-sm">
+                Open-source platform for deploying autonomous agents on Kubernetes
+              </p>
+            </div>
+            <div className="p-6 rounded-lg border border-border/40 bg-card/30 text-left">
+              <h3 className="text-lg font-bold text-foreground mb-2">Command Center</h3>
+              <p className="text-foreground/70 text-sm">
+                Enterprise platform for managing agentic workflows (Coming soon)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
+}
