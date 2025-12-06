@@ -66,7 +66,7 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              kubeagentics
+              KubeAgentics
             </h2>
             <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
               Our flagship open-source product for deploying and managing autonomous agents on Kubernetes clusters
