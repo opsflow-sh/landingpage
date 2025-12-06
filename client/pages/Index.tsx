@@ -1,62 +1,307 @@
-import { DemoResponse } from "@shared/api";
-import { useEffect, useState } from "react";
+import { Layout } from "@/components/Layout";
+import { ArrowRight, Zap, Brain, Users, Cpu, Github, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Index() {
-  const [exampleFromServer, setExampleFromServer] = useState("");
-  // Fetch users on component mount
-  useEffect(() => {
-    fetchDemo();
-  }, []);
-
-  // Example of how to fetch data from the server (if needed)
-  const fetchDemo = async () => {
-    try {
-      const response = await fetch("/api/demo");
-      const data = (await response.json()) as DemoResponse;
-      setExampleFromServer(data.message);
-    } catch (error) {
-      console.error("Error fetching hello:", error);
-    }
-  };
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
-      <div className="text-center">
-        {/* TODO: FUSION_GENERATION_APP_PLACEHOLDER replace everything here with the actual app! */}
-        <h1 className="text-2xl font-semibold text-slate-800 flex items-center justify-center gap-3">
-          <svg
-            className="animate-spin h-8 w-8 text-slate-400"
-            viewBox="0 0 50 50"
-          >
-            <circle
-              className="opacity-30"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-            />
-            <circle
-              className="text-slate-600"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-              strokeDasharray="100"
-              strokeDashoffset="75"
-            />
-          </svg>
-          Generating your app...
-        </h1>
-        <p className="mt-4 text-slate-600 max-w-md">
-          Watch the chat on the left for updates that might need your attention
-          to finish generating
-        </p>
-        <p className="mt-4 hidden max-w-md">{exampleFromServer}</p>
-      </div>
-    </div>
+    <Layout>
+      {/* Hero Section */}
+      <section className="relative overflow-hidden pt-20 pb-20 md:pt-32 md:pb-32">
+        {/* Background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5 -z-10" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -z-10" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10" />
+
+        <div className="container mx-auto max-w-6xl px-4 text-center">
+          <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-in">
+            ✨ The Future of Agentic Operations
+          </div>
+
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight animate-fade-in">
+            Intelligent Automation for <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Modern Ops</span>
+          </h1>
+
+          <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-8 animate-fade-in">
+            Build and orchestrate autonomous agents for sophisticated operational workflows. Transform how your organization operates with intelligent automation.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in">
+            <button className="px-8 py-4 rounded-lg bg-gradient-to-r from-primary to-secondary text-primary-foreground font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all transform hover:-translate-y-1">
+              Start Building Free
+              <ArrowRight className="w-4 h-4 inline-block ml-2" />
+            </button>
+            <button className="px-8 py-4 rounded-lg border border-border bg-background text-foreground font-semibold hover:bg-muted transition-colors">
+              View Documentation
+            </button>
+          </div>
+
+          {/* Feature highlights */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 animate-fade-in">
+            <div className="flex items-center justify-center gap-2 text-sm text-foreground/60">
+              <span className="w-2 h-2 rounded-full bg-primary" />
+              Open Source & Free
+            </div>
+            <div className="flex items-center justify-center gap-2 text-sm text-foreground/60">
+              <span className="w-2 h-2 rounded-full bg-secondary" />
+              Enterprise Ready
+            </div>
+            <div className="flex items-center justify-center gap-2 text-sm text-foreground/60">
+              <span className="w-2 h-2 rounded-full bg-primary" />
+              Kubernetes Native
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Product - kubeagentics */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background via-card/50 to-background border-t border-b border-border/40">
+        <div className="container mx-auto max-w-6xl px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              kubeagentics
+            </h2>
+            <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
+              Our flagship open-source product for deploying and managing autonomous agents on Kubernetes clusters
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl p-12 flex items-center justify-center min-h-80">
+                <div className="text-center">
+                  <Cpu className="w-24 h-24 text-primary mx-auto mb-4" />
+                  <p className="text-foreground/60">Kubernetes-native agent orchestration</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-2">
+                  Deploy Agents at Scale
+                </h3>
+                <p className="text-foreground/70">
+                  Run intelligent autonomous agents on your Kubernetes infrastructure with production-grade reliability and observability.
+                </p>
+              </div>
+
+              <ul className="space-y-3">
+                {[
+                  "Kubernetes-first architecture",
+                  "Automatic scaling and load balancing",
+                  "Built-in monitoring and logging",
+                  "Multi-agent orchestration",
+                  "Easy integration with existing systems",
+                ].map((feature) => (
+                  <li key={feature} className="flex items-start gap-3">
+                    <span className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="w-2 h-2 rounded-full bg-primary" />
+                    </span>
+                    <span className="text-foreground/80">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="flex gap-4 pt-4">
+                <Link
+                  to="/products"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
+                >
+                  Learn More
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border bg-background text-foreground font-semibold hover:bg-muted transition-colors"
+                >
+                  <Github className="w-4 h-4" />
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Offerings */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto max-w-6xl px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Our Ecosystem
+            </h2>
+            <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
+              Complete solutions for building and managing agentic workflows
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Agentic Ops Alliance */}
+            <div className="group rounded-xl border border-border/40 bg-card/50 p-8 hover:border-primary/50 hover:bg-card transition-all duration-300">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-6 group-hover:from-primary/30 group-hover:to-primary/20 transition-colors">
+                <Zap className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-3">
+                Agentic Ops Alliance
+              </h3>
+              <p className="text-foreground/70 mb-6">
+                Join industry leaders building the standards and best practices for agentic operations. Collaborate on frameworks, guidelines, and shared solutions.
+              </p>
+              <Link
+                to="/community"
+                className="inline-flex items-center gap-2 text-primary font-semibold group-hover:gap-3 transition-all"
+              >
+                Join Alliance
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Agentic Ops Community */}
+            <div className="group rounded-xl border border-border/40 bg-card/50 p-8 hover:border-secondary/50 hover:bg-card transition-all duration-300">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-secondary/20 to-secondary/10 flex items-center justify-center mb-6 group-hover:from-secondary/30 group-hover:to-secondary/20 transition-colors">
+                <Users className="w-6 h-6 text-secondary" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-3">
+                Agentic Ops Community
+              </h3>
+              <p className="text-foreground/70 mb-6">
+                Connect with developers and operators building with agentic systems. Share experiences, ask questions, and grow together with thousands of community members.
+              </p>
+              <Link
+                to="/community"
+                className="inline-flex items-center gap-2 text-secondary font-semibold group-hover:gap-3 transition-all"
+              >
+                Join Community
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Command Center */}
+            <div className="group rounded-xl border border-border/40 bg-card/50 p-8 hover:border-primary/50 hover:bg-card transition-all duration-300">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-6 group-hover:from-primary/30 group-hover:to-primary/20 transition-colors">
+                <Brain className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-3">
+                Agentic Ops Command Center
+              </h3>
+              <p className="text-foreground/70 mb-6">
+                Coming soon: Enterprise platform for managing and monitoring agentic workflows at scale. Centralized control, real-time insights, and intelligent automation orchestration.
+              </p>
+              <button className="inline-flex items-center gap-2 text-primary font-semibold opacity-60 cursor-not-allowed">
+                Coming Soon
+              </button>
+            </div>
+
+            {/* Advanced Capabilities */}
+            <div className="group rounded-xl border border-border/40 bg-card/50 p-8 hover:border-secondary/50 hover:bg-card transition-all duration-300">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-secondary/20 to-secondary/10 flex items-center justify-center mb-6 group-hover:from-secondary/30 group-hover:to-secondary/20 transition-colors">
+                <Cpu className="w-6 h-6 text-secondary" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-3">
+                Advanced Capabilities
+              </h3>
+              <p className="text-foreground/70 mb-6">
+                Sophisticated agent reasoning, multi-step workflows, failure recovery, and advanced observability. Built for complex operational challenges.
+              </p>
+              <Link
+                to="/products"
+                className="inline-flex items-center gap-2 text-secondary font-semibold group-hover:gap-3 transition-all"
+              >
+                Explore More
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Agentic Ops */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background to-card/30">
+        <div className="container mx-auto max-w-6xl px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Why Agentic Ops?
+            </h2>
+            <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
+              The operational landscape is changing. Agentic systems are the future.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Autonomous Execution",
+                description:
+                  "Agents make decisions and execute complex operations without manual intervention, reducing toil and accelerating response times.",
+              },
+              {
+                title: "Intelligent Adaptation",
+                description:
+                  "Systems learn from outcomes and adapt to changing operational conditions, improving over time.",
+              },
+              {
+                title: "Scale Without Limits",
+                description:
+                  "Handle growing complexity by delegating to autonomous agents. Scale operations without proportional increases in manual effort.",
+              },
+              {
+                title: "Cost Reduction",
+                description:
+                  "Automate repetitive tasks and reduce manual overhead. Lower operational costs while improving reliability.",
+              },
+              {
+                title: "Faster Incident Response",
+                description:
+                  "Agents detect and respond to issues immediately. Reduce MTTR and minimize impact on users.",
+              },
+              {
+                title: "Better Reliability",
+                description:
+                  "Consistent execution of operational procedures. Reduce human error and improve system reliability.",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="rounded-lg border border-border/40 bg-card/30 p-6 hover:border-border/60 transition-colors"
+              >
+                <h3 className="text-lg font-bold text-foreground mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-foreground/70">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 md:py-32">
+        <div className="container mx-auto max-w-4xl px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            Ready to Transform Your Operations?
+          </h2>
+          <p className="text-lg text-foreground/70 mb-8 max-w-2xl mx-auto">
+            Join hundreds of organizations building the future of intelligent operations. Start with kubeagentics today.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="px-8 py-4 rounded-lg bg-gradient-to-r from-primary to-secondary text-primary-foreground font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all transform hover:-translate-y-1">
+              Get Started Free
+              <ArrowRight className="w-4 h-4 inline-block ml-2" />
+            </button>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border border-border bg-background text-foreground font-semibold hover:bg-muted transition-colors"
+            >
+              <Github className="w-5 h-5" />
+              Star on GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+    </Layout>
   );
 }
