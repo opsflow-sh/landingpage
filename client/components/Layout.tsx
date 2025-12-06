@@ -67,7 +67,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-border/40 bg-muted/30">
       <div className="container mx-auto max-w-7xl px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
           <div>
             <div className="mb-4 flex justify-start">
               <img
@@ -122,6 +122,18 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
+          </div>
+          <div>
+            <div className="flex flex-col items-center gap-3">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/4/46/Make_In_India.png"
+                alt="Make in India, Built for World Logo"
+                className="h-16 w-auto"
+              />
+              <p className="text-xs text-center text-foreground/60">
+                Made in India,<br />Built for the World
+              </p>
+            </div>
           </div>
           <div>
             <h4 className="font-semibold text-foreground mb-4">Connect</h4>
