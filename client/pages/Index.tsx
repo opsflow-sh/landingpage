@@ -30,7 +30,7 @@ export default function Index() {
           </h1>
 
           <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-8 animate-fade-in">
-            Build and orchestrate autonomous agents for sophisticated operational workflows. Transform how your organization operates with intelligent automation.
+            Your intelligent copilot for complex operations. Agents that augment human expertise, amplify your team's capabilities, and put you in control of every decision.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in">
