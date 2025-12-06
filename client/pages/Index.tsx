@@ -240,34 +240,34 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "Autonomous Execution",
+                title: "Empowered Decision Making",
                 description:
-                  "Agents make decisions and execute complex operations without manual intervention, reducing toil and accelerating response times.",
+                  "Agents provide intelligent recommendations and handle routine tasks, keeping humans informed and in control of all critical decisions.",
               },
               {
-                title: "Intelligent Adaptation",
+                title: "Human-Augmented Intelligence",
                 description:
-                  "Systems learn from outcomes and adapt to changing operational conditions, improving over time.",
+                  "Combine human expertise with AI capabilities. Agents learn from your team's knowledge and adapt to your operational practices.",
               },
               {
-                title: "Scale Without Limits",
+                title: "Eliminate Toil, Not Jobs",
                 description:
-                  "Handle growing complexity by delegating to autonomous agents. Scale operations without proportional increases in manual effort.",
+                  "Automate tedious, repetitive work. Free your team from operational drudgery to focus on strategic, high-value decisions.",
               },
               {
-                title: "Cost Reduction",
+                title: "Instant Incident Assistance",
                 description:
-                  "Automate repetitive tasks and reduce manual overhead. Lower operational costs while improving reliability.",
+                  "Agents detect issues and gather context instantly, giving your team the information they need to respond faster.",
               },
               {
-                title: "Faster Incident Response",
+                title: "Confidence at Scale",
                 description:
-                  "Agents detect and respond to issues immediately. Reduce MTTR and minimize impact on users.",
+                  "Handle complexity through intelligent collaboration. Scale operations with your team working alongside capable agents, not replaced by them.",
               },
               {
-                title: "Better Reliability",
+                title: "Always Under Control",
                 description:
-                  "Consistent execution of operational procedures. Reduce human error and improve system reliability.",
+                  "Human-in-control workflows ensure you approve critical actions. Agents are your partners in execution, not autonomous overlords.",
               },
             ].map((item, index) => (
               <div
