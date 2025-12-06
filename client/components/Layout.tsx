@@ -69,6 +69,13 @@ const Footer = () => {
       <div className="container mx-auto max-w-7xl px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
+            <div className="mb-4 flex justify-start">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Ff5c6bb0e22854d8890f1f6f00ee99a02?format=webp&width=800"
+                alt="OpsFlow Bot Mascot"
+                className="w-12 h-12"
+              />
+            </div>
             <h3 className="font-bold text-foreground mb-4">OpsFlow</h3>
             <p className="text-sm text-foreground/60">
               Building the future of Agentic Ops Workflows
