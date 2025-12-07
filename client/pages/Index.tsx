@@ -138,7 +138,7 @@ export default function Index() {
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/kubeagentics/kubeagentics"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border bg-background text-foreground font-semibold hover:bg-muted transition-colors"
@@ -178,13 +178,15 @@ export default function Index() {
                 for agentic operations. Collaborate on frameworks, guidelines,
                 and shared solutions.
               </p>
-              <Link
-                to="/community"
+              <a
+                href="http://agenticops.org/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-primary font-semibold group-hover:gap-3 transition-all"
               >
                 Join Alliance
                 <ArrowRight className="w-4 h-4" />
-              </Link>
+              </a>
             </div>
 
             {/* Agentic Ops Community */}
@@ -200,13 +202,15 @@ export default function Index() {
                 systems. Share experiences, ask questions, and grow together
                 with thousands of community members.
               </p>
-              <Link
-                to="/community"
+              <a
+                href="http://agenticops.community/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-secondary font-semibold group-hover:gap-3 transition-all"
               >
                 Join Community
                 <ArrowRight className="w-4 h-4" />
-              </Link>
+              </a>
             </div>
 
             {/* Command Center */}
@@ -328,7 +332,7 @@ export default function Index() {
               <ArrowRight className="w-4 h-4 inline-block ml-2" />
             </button>
             <a
-              href="https://github.com"
+              href="https://github.com/kubeagentics/kubeagentics"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border border-border bg-background text-foreground font-semibold hover:bg-muted transition-colors"
