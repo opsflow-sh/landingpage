@@ -47,7 +47,7 @@ const Header = () => {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com"
+            href="https://github.com/kubeagentics/kubeagentics"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground/60 hover:text-foreground transition-colors"
@@ -85,12 +85,14 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Products</h4>
             <ul className="space-y-2">
               <li>
-                <Link
-                  to="/products"
+                <a
+                  href="https://kubeagentics.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-foreground/60 hover:text-foreground transition-colors"
                 >
                   kubeagentics
-                </Link>
+                </a>
               </li>
               <li>
                 <Link
@@ -106,20 +108,24 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Community</h4>
             <ul className="space-y-2">
               <li>
-                <Link
-                  to="/community"
+                <a
+                  href="http://agenticops.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-foreground/60 hover:text-foreground transition-colors"
                 >
                   Alliance
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/community"
+                <a
+                  href="http://agenticops.community/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-foreground/60 hover:text-foreground transition-colors"
                 >
                   Community
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -145,7 +151,7 @@ const Footer = () => {
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/kubeagentics/kubeagentics"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground/60 hover:text-foreground transition-colors"
