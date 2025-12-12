@@ -77,8 +77,8 @@ const Footer = () => {
           <div className="flex flex-col justify-start">
             <div className="mb-4 flex justify-start">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Fe34854392309440c898cf025aeae71c4?format=webp&width=800"
-                alt="OpsFlow Bot Mascot"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2F662de63651b548e396efce312fe39372?format=webp&width=800"
+                alt="AOF Logo"
                 className="w-12 h-12"
               />
             </div>
