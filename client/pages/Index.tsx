@@ -60,7 +60,7 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 animate-fade-in">
             <div className="flex items-center justify-center gap-2 text-sm text-foreground/60">
               <span className="w-2 h-2 rounded-full bg-primary" />
-              Open Source & Free
+              Open Core
             </div>
             <div className="flex items-center justify-center gap-2 text-sm text-foreground/60">
               <span className="w-2 h-2 rounded-full bg-secondary" />
