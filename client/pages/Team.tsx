@@ -8,21 +8,21 @@ export default function Team() {
       title: "CEO & Founder",
       bio: "Experienced enterprise strategist and healthcare innovator. Founded Xficient Inc. (Aug 2023), raising $4M to bring Generative AI to healthcare payers. Previously Head of Sales Strategy for Healthcare Payer Vertical at Salesforce, where he conceptualized and led the launch of a $500M healthtech platform. Senior Director of Enterprise Strategy at Aetna with M&A responsibilities. Founder of Mathema Analytics (acquired by Moody's Analytics). MBA from Indian School of Business, B.S. in Mechanical Engineering.",
       linkedinUrl: "https://www.linkedin.com/in/anoop-mehendale/",
-      imageUrl: "https://via.placeholder.com/300x300?text=Anoop+Mehendale",
+      imageUrl: "https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Fa30503b7e4574ce58f3b2c243fc27924?format=webp&width=800",
     },
     {
       name: "Gourav Shah",
       title: "Chief Builder & Co-Founder",
-      bio: "Domain expert with 18+ years of expertise in Operations and DevOps. Recognized thought leader and corporate trainer with a proven track record of building distribution channels. Trusted by 200,000+ students on Udemy and enterprise organizations worldwide. Brings deep technical expertise combined with exceptional ability to communicate and scale impact through education and community building.",
+      bio: "Domain expert with 18+ years of expertise in Operations and DevOps. Recognized thought leader with course authorship at Linux Foundation and extensive corporate training experience. Trusted by 200,000+ students on Udemy and leading enterprise organizations worldwide. Proven track record of building distribution channels and opening enterprise relationships through education and community building. Brings deep technical expertise combined with exceptional ability to communicate and scale impact at organizational level.",
       linkedinUrl: "https://www.linkedin.com/in/gouravshah/",
-      imageUrl: "https://via.placeholder.com/300x300?text=Gourav+Shah",
+      imageUrl: "https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Fc3c5f8faf5a94ef0bb6a60a9d701ac8a?format=webp&width=800",
     },
     {
       name: "Prashant Sasatte",
       title: "CTO & Co-Founder",
-      bio: "Technical leader with proven startup experience and elite educational background. Brings deep technical expertise in building scalable systems and leading engineering teams. Prior experience launching and scaling technology products. Combines technical excellence with entrepreneurial vision to drive OpsFlow's technology strategy and product architecture.",
+      bio: "Technical leader and serial entrepreneur with elite academic credentials. Founder of Olelo Intelligent Systems (Oct 2018 - Present) building privacy-first, secure enterprise smart voice assistant solutions. Founder of Cogmeta Intelligent Systems redefining customer engagement through revolutionary audience intelligence platform. Founded Interior Point Analytics (Dec 2011 - Feb 2015). Previous Principal Analytics Engineer at Exponential, leading research and implementation of statistical models and optimization algorithms. Education: Master of Mathematics in Computer Science from University of Waterloo (Grade 4.0/4.0) and B.E. in Computer Science from BITS Pilani (Grade 9.92/10.00). Combines technical excellence with entrepreneurial vision to drive OpsFlow's technology strategy and product architecture.",
       linkedinUrl: "https://www.linkedin.com/in/prashantsasatte/",
-      imageUrl: "https://via.placeholder.com/300x300?text=Prashant+Sasatte",
+      imageUrl: "https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2F1cd7901e1bab4583962976450b937efb?format=webp&width=800",
     },
   ];
 
