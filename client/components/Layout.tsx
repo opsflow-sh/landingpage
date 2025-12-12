@@ -142,7 +142,9 @@ const Footer = () => {
               className="h-20 w-auto mb-3"
             />
             <p className="text-xs text-center text-foreground/60">
-              Made in India,<br />Built for the World
+              Made in India,
+              <br />
+              Built for the World
             </p>
           </div>
           <div className="flex flex-col justify-start">
