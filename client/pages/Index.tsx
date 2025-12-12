@@ -34,9 +34,9 @@ export default function Index() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight animate-fade-in">
-            Intelligent Automation for{" "}
+            Building Agentic Ops{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-              Modern Ops
+              Workflows
             </span>
           </h1>
 
