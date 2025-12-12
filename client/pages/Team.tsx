@@ -5,24 +5,24 @@ export default function Team() {
   const founders = [
     {
       name: "Anoop Mehendale",
-      title: "CEO and Co-Founder",
-      bio: "Healthcare AI venture founder with proven success raising $4M+ and leading $500M+ platform launches. Founder & CEO of Xficient Inc. (funded by healthcare-focused VCs), building Generative AI solutions for healthcare payers. Former Head of Healthcare Sales Strategy at Salesforce, where he conceptualized and launched a $500M healthtech platform. Extensive enterprise leadership at Optum ($30M portfolio) and Aetna. Successful exit: Mathema Analytics (acquired by Moody's). Track record: Transforming complex enterprise operations with AI-driven solutions. Education: ISB MBA, Wharton MBA.",
+      title: "Founder & CEO",
+      bio: "Serial entrepreneur with a track record of building and scaling enterprise technology companies.\n\n• Founded Xficient (GenAI) → raised $4M, exited to investors\n• Founded Mathema Analytics → acquired by Moody's Analytics\n• Enterprise platforms at Highmark | Strategy & M&A at Aetna\n• Sales strategy leader at Salesforce\n• Early leadership roles in India at Mu Sigma and LatentView Analytics\n• MBA, Indian School of Business",
       linkedinUrl: "https://www.linkedin.com/in/anoopmehendale/",
       imageUrl:
         "https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Fa30503b7e4574ce58f3b2c243fc27924?format=webp&width=800",
     },
     {
       name: "Gourav Shah",
-      title: "Co-Founder and Domain Expert",
-      bio: "Leading DevOps/Ops domain expert with 18+ years hands-on expertise. Built massive global audience: 228,700+ Udemy students with 5,400+ reviews. Most coveted corporate trainer in DevOps space with unmatched credentials—trusted by Fortune 500 clients: Visa, Adobe, Walmart Labs, Cisco, Nutanix, Rakuten, Citrix, and more. Established relationships providing direct leverage for customer acquisition and growth. Founder of School of DevOps™ and Linux Foundation Course Developer (6 in-depth courses). Combines deep technical credibility with significant reach and enterprise relationships that can accelerate OpsFlow's market penetration.",
+      title: "Co-Founder & Chief Product Officer",
+      bio: "Leading DevOps domain expert with 18+ years hands-on expertise in cloud infrastructure, container orchestration, and platform engineering.\n\n• 228,700+ students on Udemy with 5,400+ reviews—one of the most recognized educators in DevOps\n• Founder of School of DevOps™ and Linux Foundation Course Developer & Maintainer\n• Author of Ansible Playbook Essentials (Packt Publishing)\n• Corporate trainer for Fortune 500: Visa, Adobe, Walmart Labs, Cisco, Nutanix, Rakuten, Citrix\n• Deep expertise in Kubernetes, MLOps, AI infrastructure, and cloud-native architectures\n• CKA Certified | Shivaji University",
       linkedinUrl: "https://www.linkedin.com/in/gouravshah/",
       imageUrl:
         "https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Fc3c5f8faf5a94ef0bb6a60a9d701ac8a?format=webp&width=800",
     },
     {
       name: "Prashant Sasatte",
-      title: "CTO",
-      bio: "Technical leader and serial entrepreneur with elite academic credentials. Founder of Olelo Intelligent Systems (Oct 2018 - Present) building privacy-first, secure enterprise smart voice assistant solutions. Founder of Cogmeta Intelligent Systems redefining customer engagement through revolutionary audience intelligence platform. Founded Interior Point Analytics (Dec 2011 - Feb 2015). Previous Principal Analytics Engineer at Exponential, leading research and implementation of statistical models and optimization algorithms. Education: Master of Mathematics in Computer Science from University of Waterloo (Grade 4.0/4.0) and B.E. in Computer Science from BITS Pilani (Grade 9.92/10.00). Combines technical excellence with entrepreneurial vision to drive OpsFlow's technology strategy and product architecture.",
+      title: "Co-Founder & Chief Technology Officer",
+      bio: "Technical leader and serial entrepreneur with elite academic credentials and deep expertise in AI, optimization, and enterprise systems.\n\n• Founder of Olelo Intelligent Systems (privacy-first enterprise smart voice assistant solutions)\n• Founder of Cogmeta Intelligent Systems (audience intelligence platform)\n• Founded Interior Point Analytics\n• Principal Analytics Engineer at Exponential\n• Expert in statistical modeling, optimization algorithms, and secure AI architecture\n• Master of Mathematics in Computer Science, University of Waterloo (4.0/4.0)\n• B.E. Computer Science, BITS Pilani (9.92/10.00)",
       linkedinUrl: "https://www.linkedin.com/in/prashantsasatte/",
       imageUrl:
         "https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2F1cd7901e1bab4583962976450b937efb?format=webp&width=800",
