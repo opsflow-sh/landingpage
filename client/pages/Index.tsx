@@ -135,7 +135,7 @@ export default function Index() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a
-                  href="http://github.com/opsflow-sh/kubepilot"
+                  href="https://github.com/kubeagentics/kubepilot"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border bg-background text-foreground font-semibold hover:bg-muted transition-colors"
@@ -143,6 +143,76 @@ export default function Index() {
                   <Github className="w-4 h-4" />
                   View on GitHub
                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Product - Agentic Ops Framework */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background via-card/50 to-background border-t border-b border-border/40">
+        <div className="container mx-auto max-w-6xl px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Agentic Ops Framework
+            </h2>
+            <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
+              The only framework built for DevOps folks by DevOps folks from
+              the ground up. Next-gen automation with MCP and agentic AI.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-bold text-foreground mb-3">
+                  Built for Operations
+                </h3>
+                <ul className="space-y-2">
+                  {[
+                    "DevOps-first architecture",
+                    "Model Context Protocol support",
+                    "Agentic AI integration",
+                    "Cloud-native workflows",
+                  ].map((feature, idx) => (
+                    <li key={idx} className="flex items-center gap-3">
+                      <span className="w-2 h-2 rounded-full bg-primary" />
+                      <span className="text-foreground/80">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="flex gap-4 pt-4">
+                <a
+                  href="https://aof.sh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400/60 text-white font-semibold hover:bg-sky-400/80 transition-colors"
+                >
+                  Learn More
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+                <a
+                  href="https://github.com/agenticopsorg/aof"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border bg-background text-foreground font-semibold hover:bg-muted transition-colors"
+                >
+                  <Github className="w-4 h-4" />
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <div className="rounded-2xl border border-border/40 bg-gradient-to-br from-card/50 to-background/50 p-8">
+                <div className="text-foreground/60 font-mono text-sm space-y-2">
+                  <div>$ aof init my-workflow</div>
+                  <div>$ aof add kubernetes-agent</div>
+                  <div>$ aof deploy --with-mcp</div>
+                  <div className="text-primary">✓ Deployment successful</div>
+                </div>
               </div>
             </div>
           </div>
