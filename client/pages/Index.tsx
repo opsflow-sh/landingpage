@@ -25,7 +25,7 @@ export default function Index() {
             ✨ The Future of Agentic Operations
           </div>
 
-          <div className="flex justify-center animate-fade-in">
+          <div className="flex justify-center items-end pb-5 animate-fade-in">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2F662de63651b548e396efce312fe39372?format=webp&width=800"
               alt="AOF Logo"
@@ -34,19 +34,17 @@ export default function Index() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight animate-fade-in">
-            Building Agentic DevOps{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-              Workflows
-            </span>
+            Building Agentic DevOps Ecosystem
           </h1>
 
-          <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-8 animate-fade-in">
+          <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-8 pt-5 animate-fade-in">
             Orchestrate intelligent agents across your operations. KubePilot,
-            OpsFlow, and complementary agentic tools unified into seamless
-            workflows that transform how teams manage complex infrastructure.
+            KubeAgentics, Agentic Ops Framework, OpsFlow, and complementary
+            agentic tools unified into seamless workflows that transform how
+            teams manage complex infrastructure.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 pt-5 animate-fade-in">
             <button className="px-8 py-4 rounded-lg bg-sky-400/60 text-white font-semibold hover:bg-sky-400/80 transition-all transform hover:-translate-y-1">
               Start Building Free
               <ArrowRight className="w-4 h-4 inline-block ml-2" />
@@ -79,7 +77,7 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              KubePilot
+              KubePilot CE
             </h2>
             <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
               The only desktop-based Agentic Kubernetes Copilot. Bring
