@@ -12,8 +12,8 @@ const Header = () => {
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Ff3ce7f74d6fa4e8ba867dfa0afd51b99"
-            alt="OpsFlow.sh"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2F54221370c80941f29bc20169f17a0ffc?format=webp&width=800"
+            alt="AOF Logo"
             className="h-8"
           />
         </Link>
@@ -77,8 +77,8 @@ const Footer = () => {
           <div className="flex flex-col justify-start">
             <div className="mb-4 flex justify-start">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Fe34854392309440c898cf025aeae71c4?format=webp&width=800"
-                alt="OpsFlow Bot Mascot"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2F54221370c80941f29bc20169f17a0ffc?format=webp&width=800"
+                alt="AOF Logo"
                 className="w-12 h-12"
               />
             </div>
