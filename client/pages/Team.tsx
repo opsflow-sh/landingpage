@@ -79,9 +79,30 @@ export default function Team() {
                 </p>
 
                 {/* Bio */}
-                <p className="text-foreground/70 text-sm leading-relaxed mb-6">
-                  {founder.bio}
-                </p>
+                <div className="text-foreground/70 text-sm leading-relaxed mb-6 text-left space-y-2">
+                  {founder.bio.split('\n\n').map((paragraph, idx) => (
+                    <div key={idx}>
+                      {paragraph.includes('•') ? (
+                        <ul className="space-y-1 list-none">
+                          {paragraph.split('\n').map((line, lineIdx) => (
+                            <li key={lineIdx} className="flex items-start gap-2">
+                              {line.startsWith('•') ? (
+                                <>
+                                  <span className="text-primary font-bold mt-1">•</span>
+                                  <span>{line.slice(2)}</span>
+                                </>
+                              ) : (
+                                line
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="font-semibold text-foreground">{paragraph}</p>
+                      )}
+                    </div>
+                  ))}
+                </div>
 
                 {/* LinkedIn Link */}
                 <a
