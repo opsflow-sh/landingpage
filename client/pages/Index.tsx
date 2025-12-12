@@ -27,7 +27,7 @@ export default function Index() {
 
           <div className="flex justify-center animate-fade-in">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Fe0584e44bcf84ffca89507b9a1a43bf0?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2F662de63651b548e396efce312fe39372?format=webp&width=800"
               alt="AOF Logo"
               className="w-32 h-32 md:w-48 md:h-48"
             />
