@@ -34,7 +34,7 @@ export default function Index() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight animate-fade-in">
-            Building Agentic Ops{" "}
+            Building Agentic DevOps{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               Workflows
             </span>
