@@ -127,15 +127,17 @@ export default function Index() {
               </ul>
 
               <div className="flex gap-4 pt-4">
-                <Link
-                  to="/products"
+                <a
+                  href="https://kubepilot.sh"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400/60 text-white font-semibold hover:bg-sky-400/80 transition-colors"
                 >
                   Learn More
                   <ArrowRight className="w-4 h-4" />
-                </Link>
+                </a>
                 <a
-                  href="https://github.com/kubeagentics/kubeagentics"
+                  href="http://github.com/opsflow-sh/kubepilot"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border bg-background text-foreground font-semibold hover:bg-muted transition-colors"
