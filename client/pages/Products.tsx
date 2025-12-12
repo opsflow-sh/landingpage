@@ -42,7 +42,7 @@ export default function Products() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-lg border border-border/40 bg-card/30 text-left">
               <h3 className="text-lg font-bold text-foreground mb-2">
-                kubeagentics
+                kubepilot
               </h3>
               <p className="text-foreground/70 text-sm">
                 Open-source platform for deploying autonomous agents on

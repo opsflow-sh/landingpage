@@ -41,7 +41,7 @@ export default function Index() {
           </h1>
 
           <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-8 animate-fade-in">
-            Orchestrate intelligent agents across your operations. KubeAgentics,
+            Orchestrate intelligent agents across your operations. KubePilot,
             OpsFlow, and complementary agentic tools unified into seamless
             workflows that transform how teams manage complex infrastructure.
           </p>
@@ -74,12 +74,12 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Featured Product - kubeagentics */}
+      {/* Featured Product - kubepilot */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background via-card/50 to-background border-t border-b border-border/40">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              KubeAgentics
+              KubePilot
             </h2>
             <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
               The only desktop-based Agentic Kubernetes Copilot. Bring
@@ -324,7 +324,7 @@ export default function Index() {
           </h2>
           <p className="text-lg text-foreground/70 mb-8 max-w-2xl mx-auto">
             Join hundreds of organizations building the future of intelligent
-            operations. Start with kubeagentics today.
+            operations. Start with kubepilot today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-8 py-4 rounded-lg bg-sky-400/60 text-white font-semibold hover:bg-sky-400/80 transition-all transform hover:-translate-y-1">

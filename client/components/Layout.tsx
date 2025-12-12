@@ -92,12 +92,12 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://kubeagentics.com/"
+                  href="https://kubepilot.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-foreground/60 hover:text-foreground transition-colors"
                 >
-                  kubeagentics
+                  kubepilot
                 </a>
               </li>
               <li>
