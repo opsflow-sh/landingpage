@@ -38,6 +38,12 @@ const Header = () => {
             Community
           </Link>
           <Link
+            to="/team"
+            className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
+          >
+            Team
+          </Link>
+          <Link
             to="/docs"
             className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
           >
