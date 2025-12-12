@@ -90,14 +90,11 @@ export default function Index() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl p-12 flex items-center justify-center min-h-80">
-                <div className="text-center">
-                  <Cpu className="w-24 h-24 text-primary mx-auto mb-4" />
-                  <p className="text-foreground/60">
-                    Kubernetes-native agent orchestration
-                  </p>
-                </div>
-              </div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Fb85f0bae880e4d8ba5231a1881f656e7?format=webp&width=800"
+                alt="KubePilot Desktop App"
+                className="rounded-2xl shadow-lg w-full h-auto"
+              />
             </div>
 
             <div className="space-y-6">
