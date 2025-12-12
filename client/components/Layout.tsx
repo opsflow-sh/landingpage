@@ -79,7 +79,7 @@ const Footer = () => {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2F662de63651b548e396efce312fe39372?format=webp&width=800"
                 alt="AOF Logo"
-                className="w-12 h-12"
+                className="w-20 h-20"
               />
             </div>
             <h3 className="font-bold text-foreground mb-4">OpsFlow</h3>
