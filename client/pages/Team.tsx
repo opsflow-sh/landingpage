@@ -14,7 +14,7 @@ export default function Team() {
     {
       name: "Gourav Shah",
       title: "Chief Builder & Co-Founder",
-      bio: "Leading DevOps/Ops domain expert with 18+ years hands-on expertise and proven ability to drive enterprise adoption. 228,700+ Udemy students with 5,400+ reviews—largest DevOps educator. Trusted corporate trainer for Fortune 500 clients: Visa, Adobe, Walmart Labs, Cisco, Nutanix, Rakuten, Citrix, and more—direct relationships for distribution & sales. Founder of School of DevOps™ and Linux Foundation Course Developer (6 in-depth courses). Proven track record of building enterprise distribution channels and opening customer relationships at scale through education and thought leadership.",
+      bio: "Leading DevOps/Ops domain expert with 18+ years hands-on expertise. Built massive global audience: 228,700+ Udemy students with 5,400+ reviews as largest DevOps educator. Established relationships with Fortune 500 corporate clients: Visa, Adobe, Walmart Labs, Cisco, Nutanix, Rakuten, Citrix, and more—providing direct leverage for customer acquisition and growth. Founder of School of DevOps™ and Linux Foundation Course Developer (6 in-depth courses). Combines deep technical credibility with significant reach and enterprise relationships that can accelerate OpsFlow's market penetration.",
       linkedinUrl: "https://www.linkedin.com/in/gouravshah/",
       imageUrl:
         "https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Fc3c5f8faf5a94ef0bb6a60a9d701ac8a?format=webp&width=800",
