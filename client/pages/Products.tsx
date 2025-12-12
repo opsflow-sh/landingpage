@@ -45,7 +45,8 @@ export default function Products() {
                 KubePilot
               </h3>
               <p className="text-foreground/70 text-sm">
-                Open core platform for deploying autonomous agents on Kubernetes with commercial extensions
+                Open core platform for deploying autonomous agents on Kubernetes
+                with commercial extensions
               </p>
             </div>
             <div className="p-6 rounded-lg border border-border/40 bg-card/30 text-left">
@@ -53,7 +54,8 @@ export default function Products() {
                 Agentic Ops Framework
               </h3>
               <p className="text-foreground/70 text-sm">
-                Open source framework for building and deploying agentic workflows at scale
+                Open source framework for building and deploying agentic
+                workflows at scale
               </p>
             </div>
             <div className="p-6 rounded-lg border border-border/40 bg-card/30 text-left">
@@ -61,7 +63,8 @@ export default function Products() {
                 OpsFlow
               </h3>
               <p className="text-foreground/70 text-sm">
-                Enterprise platform built on Agentic Ops Framework for managing complex agentic workflows
+                Enterprise platform built on Agentic Ops Framework for managing
+                complex agentic workflows
               </p>
             </div>
           </div>
