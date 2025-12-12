@@ -42,11 +42,19 @@ export default function Products() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-lg border border-border/40 bg-card/30 text-left">
               <h3 className="text-lg font-bold text-foreground mb-2">
-                kubepilot
+                KubePilot
               </h3>
               <p className="text-foreground/70 text-sm">
                 Open-source platform for deploying autonomous agents on
                 Kubernetes
+              </p>
+            </div>
+            <div className="p-6 rounded-lg border border-border/40 bg-card/30 text-left">
+              <h3 className="text-lg font-bold text-foreground mb-2">
+                Agentic Ops Framework
+              </h3>
+              <p className="text-foreground/70 text-sm">
+                Standardized framework for building and deploying agentic workflows at enterprise scale
               </p>
             </div>
             <div className="p-6 rounded-lg border border-border/40 bg-card/30 text-left">
@@ -58,6 +66,10 @@ export default function Products() {
               </p>
             </div>
           </div>
+
+          <p className="text-center text-foreground/60 text-sm mt-12">
+            More products launching soon...
+          </p>
         </div>
       </div>
     </Layout>
