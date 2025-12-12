@@ -5,7 +5,7 @@ export default function Team() {
   const founders = [
     {
       name: "Anoop Mehendale",
-      title: "CEO & Founder",
+      title: "CEO and Co-Founder",
       bio: "Healthcare AI venture founder with proven success raising $4M+ and leading $500M+ platform launches. Founder & CEO of Xficient Inc. (funded by healthcare-focused VCs), building Generative AI solutions for healthcare payers. Former Head of Healthcare Sales Strategy at Salesforce, where he conceptualized and launched a $500M healthtech platform. Extensive enterprise leadership at Optum ($30M portfolio) and Aetna. Successful exit: Mathema Analytics (acquired by Moody's). Track record: Transforming complex enterprise operations with AI-driven solutions. Education: ISB MBA, Wharton MBA.",
       linkedinUrl: "https://www.linkedin.com/in/anoopmehendale/",
       imageUrl:
@@ -13,7 +13,7 @@ export default function Team() {
     },
     {
       name: "Gourav Shah",
-      title: "Chief Builder & Co-Founder",
+      title: "Co-Founder and Domain Expert",
       bio: "Leading DevOps/Ops domain expert with 18+ years hands-on expertise. Built massive global audience: 228,700+ Udemy students with 5,400+ reviews. Most coveted corporate trainer in DevOps space with unmatched credentials—trusted by Fortune 500 clients: Visa, Adobe, Walmart Labs, Cisco, Nutanix, Rakuten, Citrix, and more. Established relationships providing direct leverage for customer acquisition and growth. Founder of School of DevOps™ and Linux Foundation Course Developer (6 in-depth courses). Combines deep technical credibility with significant reach and enterprise relationships that can accelerate OpsFlow's market penetration.",
       linkedinUrl: "https://www.linkedin.com/in/gouravshah/",
       imageUrl:
@@ -21,7 +21,7 @@ export default function Team() {
     },
     {
       name: "Prashant Sasatte",
-      title: "CTO & Co-Founder",
+      title: "CTO",
       bio: "Technical leader and serial entrepreneur with elite academic credentials. Founder of Olelo Intelligent Systems (Oct 2018 - Present) building privacy-first, secure enterprise smart voice assistant solutions. Founder of Cogmeta Intelligent Systems redefining customer engagement through revolutionary audience intelligence platform. Founded Interior Point Analytics (Dec 2011 - Feb 2015). Previous Principal Analytics Engineer at Exponential, leading research and implementation of statistical models and optimization algorithms. Education: Master of Mathematics in Computer Science from University of Waterloo (Grade 4.0/4.0) and B.E. in Computer Science from BITS Pilani (Grade 9.92/10.00). Combines technical excellence with entrepreneurial vision to drive OpsFlow's technology strategy and product architecture.",
       linkedinUrl: "https://www.linkedin.com/in/prashantsasatte/",
       imageUrl:
