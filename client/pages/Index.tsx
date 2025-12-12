@@ -157,8 +157,8 @@ export default function Index() {
               Agentic Ops Framework
             </h2>
             <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-              The only framework built for DevOps folks by DevOps folks from
-              the ground up. Next-gen automation with MCP and agentic AI.
+              The only framework built for DevOps folks by DevOps folks from the
+              ground up. Next-gen automation with MCP and agentic AI.
             </p>
           </div>
 
