@@ -55,7 +55,7 @@ export default function Team() {
                     <img
                       src={founder.imageUrl}
                       alt={founder.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover filter grayscale"
                     />
                   </div>
                   {/* Decorative ring on hover */}
