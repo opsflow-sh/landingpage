@@ -34,7 +34,7 @@ export default function Index() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight animate-fade-in">
-            Building Agentic DevOps Ecosystem
+            Building an Agentic DevOps Ecosystem
           </h1>
 
           <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto mb-8 pt-5 animate-fade-in">
