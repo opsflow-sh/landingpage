@@ -104,7 +104,10 @@ export default function Products() {
                 Devopsify
               </h3>
               <p className="text-foreground/70 text-sm">
-                Ship your Replit app to production without learning DevOps. An agentic readiness engineer that audits your app, generates production artifacts, and gives an explainable path to deploy and operate safely.
+                Ship your Replit app to production without learning DevOps. An
+                agentic readiness engineer that audits your app, generates
+                production artifacts, and gives an explainable path to deploy
+                and operate safely.
               </p>
               <p className="text-primary text-xs mt-4 font-semibold">
                 Join Waitlist →

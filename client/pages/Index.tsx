@@ -227,7 +227,10 @@ export default function Index() {
               Devopsify
             </h2>
             <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-              Ship your Replit app to production without learning DevOps. An agentic readiness engineer that audits your app, generates production artifacts, and gives an explainable path to deploy and operate safely.
+              Ship your Replit app to production without learning DevOps. An
+              agentic readiness engineer that audits your app, generates
+              production artifacts, and gives an explainable path to deploy and
+              operate safely.
             </p>
           </div>
 
@@ -238,7 +241,9 @@ export default function Index() {
                   From Prototype to Production
                 </h3>
                 <p className="text-foreground/70">
-                  Devopsify bridges the gap between "it runs" and "it's operable". Get a clear readiness score, identify production risks, and generate the artifacts you need to deploy safely.
+                  Devopsify bridges the gap between "it runs" and "it's
+                  operable". Get a clear readiness score, identify production
+                  risks, and generate the artifacts you need to deploy safely.
                 </p>
               </div>
 
@@ -279,15 +284,26 @@ export default function Index() {
             <div className="rounded-2xl border border-border/40 bg-gradient-to-br from-card/50 to-background/50 p-8">
               <div className="space-y-6 text-foreground/80 text-sm">
                 <div className="p-4 rounded-lg bg-background/50">
-                  <div className="text-xs text-foreground/60 font-semibold mb-2">READINESS SCORE</div>
-                  <div className="text-2xl font-bold text-foreground mb-2">72/100</div>
-                  <div className="w-full bg-border/20 rounded-full h-2">
-                    <div className="bg-sky-400 h-2 rounded-full" style={{ width: "72%" }}></div>
+                  <div className="text-xs text-foreground/60 font-semibold mb-2">
+                    READINESS SCORE
                   </div>
-                  <div className="text-xs text-foreground/60 mt-2">Your app is production-ready with minor improvements</div>
+                  <div className="text-2xl font-bold text-foreground mb-2">
+                    72/100
+                  </div>
+                  <div className="w-full bg-border/20 rounded-full h-2">
+                    <div
+                      className="bg-sky-400 h-2 rounded-full"
+                      style={{ width: "72%" }}
+                    ></div>
+                  </div>
+                  <div className="text-xs text-foreground/60 mt-2">
+                    Your app is production-ready with minor improvements
+                  </div>
                 </div>
                 <div className="p-4 rounded-lg bg-background/50">
-                  <div className="text-xs text-foreground/60 font-semibold mb-3">RISK HEATMAP</div>
+                  <div className="text-xs text-foreground/60 font-semibold mb-3">
+                    RISK HEATMAP
+                  </div>
                   <div className="grid grid-cols-3 gap-2">
                     <div className="w-full aspect-square rounded bg-red-400/40"></div>
                     <div className="w-full aspect-square rounded bg-yellow-400/40"></div>
@@ -298,7 +314,9 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="p-4 rounded-lg bg-background/50">
-                  <div className="text-xs text-foreground/60 font-semibold mb-2">GENERATED ARTIFACTS</div>
+                  <div className="text-xs text-foreground/60 font-semibold mb-2">
+                    GENERATED ARTIFACTS
+                  </div>
                   <ul className="space-y-1 text-xs">
                     <li>✓ Dockerfile</li>
                     <li>✓ RUNBOOK.md</li>
