@@ -94,6 +94,22 @@ export default function Products() {
                 Coming Soon
               </p>
             </a>
+            <a
+              href="https://devopsify.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-6 rounded-lg border border-border/40 bg-card/30 text-left hover:border-primary/50 hover:bg-card transition-all"
+            >
+              <h3 className="text-lg font-bold text-foreground mb-2">
+                Devopsify
+              </h3>
+              <p className="text-foreground/70 text-sm">
+                Ship your Replit app to production without learning DevOps. An agentic readiness engineer that audits your app, generates production artifacts, and gives an explainable path to deploy and operate safely.
+              </p>
+              <p className="text-primary text-xs mt-4 font-semibold">
+                Join Waitlist →
+              </p>
+            </a>
           </div>
 
           <p className="text-center text-foreground/60 text-sm mt-12">
