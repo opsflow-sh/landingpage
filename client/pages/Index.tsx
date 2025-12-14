@@ -219,6 +219,99 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Featured Product - Devopsify */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background via-card/50 to-background border-t border-b border-border/40">
+        <div className="container mx-auto max-w-6xl px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Devopsify
+            </h2>
+            <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
+              Ship your Replit app to production without learning DevOps. An agentic readiness engineer that audits your app, generates production artifacts, and gives an explainable path to deploy and operate safely.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-2">
+                  From Prototype to Production
+                </h3>
+                <p className="text-foreground/70">
+                  Devopsify bridges the gap between "it runs" and "it's operable". Get a clear readiness score, identify production risks, and generate the artifacts you need to deploy safely.
+                </p>
+              </div>
+
+              <ul className="space-y-3">
+                {[
+                  "App Intelligence Graph for your stack",
+                  "Production Readiness Score (0-100)",
+                  "Risk Heatmap (Security, Scaling, Reliability)",
+                  "Generated Artifacts (Dockerfile, runbooks, docs)",
+                  "Explainable Recommendations",
+                  "Deploy Path Generator (Coming Soon)",
+                ].map((feature) => (
+                  <li key={feature} className="flex items-start gap-3">
+                    <span className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="w-2 h-2 rounded-full bg-primary" />
+                    </span>
+                    <span className="text-foreground/80">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="flex gap-4 pt-4">
+                <a
+                  href="https://devopsify.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400/60 text-white font-semibold hover:bg-sky-400/80 transition-colors"
+                >
+                  Join Waitlist
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+                <button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border bg-background text-foreground font-semibold hover:bg-muted transition-colors opacity-60 cursor-not-allowed">
+                  Coming Soon
+                </button>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-border/40 bg-gradient-to-br from-card/50 to-background/50 p-8">
+              <div className="space-y-6 text-foreground/80 text-sm">
+                <div className="p-4 rounded-lg bg-background/50">
+                  <div className="text-xs text-foreground/60 font-semibold mb-2">READINESS SCORE</div>
+                  <div className="text-2xl font-bold text-foreground mb-2">72/100</div>
+                  <div className="w-full bg-border/20 rounded-full h-2">
+                    <div className="bg-sky-400 h-2 rounded-full" style={{ width: "72%" }}></div>
+                  </div>
+                  <div className="text-xs text-foreground/60 mt-2">Your app is production-ready with minor improvements</div>
+                </div>
+                <div className="p-4 rounded-lg bg-background/50">
+                  <div className="text-xs text-foreground/60 font-semibold mb-3">RISK HEATMAP</div>
+                  <div className="grid grid-cols-3 gap-2">
+                    <div className="w-full aspect-square rounded bg-red-400/40"></div>
+                    <div className="w-full aspect-square rounded bg-yellow-400/40"></div>
+                    <div className="w-full aspect-square rounded bg-green-400/40"></div>
+                    <div className="w-full aspect-square rounded bg-yellow-400/40"></div>
+                    <div className="w-full aspect-square rounded bg-green-400/40"></div>
+                    <div className="w-full aspect-square rounded bg-red-400/40"></div>
+                  </div>
+                </div>
+                <div className="p-4 rounded-lg bg-background/50">
+                  <div className="text-xs text-foreground/60 font-semibold mb-2">GENERATED ARTIFACTS</div>
+                  <ul className="space-y-1 text-xs">
+                    <li>✓ Dockerfile</li>
+                    <li>✓ RUNBOOK.md</li>
+                    <li>✓ PRODUCTION.md</li>
+                    <li>✓ .env.example</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Core Offerings */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto max-w-6xl px-4">
