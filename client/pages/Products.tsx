@@ -37,31 +37,35 @@ export default function Products() {
                   {
                     date: "Dec 18",
                     title: "Agentic Ops Framework Launch",
-                    description: "Release AOF as fully open source. The framework built for DevOps folks by DevOps folks from the ground up.",
+                    description:
+                      "Release AOF as fully open source. The framework built for DevOps folks by DevOps folks from the ground up.",
                     position: "top",
-                    icon: "🚀"
+                    icon: "🚀",
                   },
                   {
                     date: "Jan 2",
                     title: "KubePilot CE Release",
-                    description: "Announce and launch KubePilot Community Edition. The only desktop-based Agentic Kubernetes Copilot.",
+                    description:
+                      "Announce and launch KubePilot Community Edition. The only desktop-based Agentic Kubernetes Copilot.",
                     position: "bottom",
-                    icon: "🎯"
+                    icon: "🎯",
                   },
                   {
                     date: "Feb 1",
                     title: "KubePilot Plus Goes Public",
-                    description: "Launch KubePilot Plus with advanced features for professional teams and enterprises.",
+                    description:
+                      "Launch KubePilot Plus with advanced features for professional teams and enterprises.",
                     position: "top",
-                    icon: "⭐"
+                    icon: "⭐",
                   },
                   {
                     date: "Q2 2025",
                     title: "Enterprise Solutions Coming",
-                    description: "More enterprise products and services launching throughout Q2 2025.",
+                    description:
+                      "More enterprise products and services launching throughout Q2 2025.",
                     position: "bottom",
-                    icon: "🏢"
-                  }
+                    icon: "🏢",
+                  },
                 ].map((milestone, idx) => {
                   const isTop = milestone.position === "top";
                   return (
@@ -73,12 +77,16 @@ export default function Products() {
                       <div className="flex-1">
                         <div
                           className={`p-6 rounded-lg border border-border/40 bg-card/50 hover:bg-card hover:border-primary/50 transition-all ${
-                            isTop ? "md:mr-auto md:max-w-sm" : "md:ml-auto md:max-w-sm"
+                            isTop
+                              ? "md:mr-auto md:max-w-sm"
+                              : "md:ml-auto md:max-w-sm"
                           }`}
                         >
                           <div className="flex items-center gap-2 mb-3">
                             <span className="text-2xl">{milestone.icon}</span>
-                            <p className="text-sm font-bold text-primary">{milestone.date}</p>
+                            <p className="text-sm font-bold text-primary">
+                              {milestone.date}
+                            </p>
                           </div>
                           <h3 className="text-lg font-bold text-foreground mb-2">
                             {milestone.title}
