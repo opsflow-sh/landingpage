@@ -22,6 +22,28 @@ export default function Products() {
             at scale
           </p>
 
+          {/* Horizontal Timeline */}
+          <div className="mb-16 overflow-x-auto pb-4">
+            <div className="flex items-center gap-2 min-w-max md:min-w-full md:justify-between px-4 md:px-0">
+              {[
+                { date: "Dec 18", items: ["AOF Open Source", "KubePilot CE"] },
+                { date: "Jan 12", items: ["KubePilot Plus"] },
+                { date: "Feb 1", items: ["Kubepilot+"] },
+                { date: "Mar 26", items: ["Opspilot EE"] },
+                { date: "Apr 22", items: ["OpsFlow Command"] }
+              ].map((milestone, idx) => (
+                <div key={idx} className="flex flex-col items-center">
+                  <div className="w-3 h-3 rounded-full bg-primary border-4 border-background mb-2" />
+                  <p className="text-xs font-bold text-primary whitespace-nowrap">{milestone.date}</p>
+                  <p className="text-xs text-foreground/70 text-center whitespace-nowrap mt-1">
+                    {milestone.items.join(" + ")}
+                  </p>
+                  {idx < 4 && <div className="hidden md:block w-12 h-0.5 bg-border/40 absolute ml-20" />}
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="bg-card/50 rounded-xl border border-border/40 p-12 mb-12">
             <h2 className="text-2xl font-bold text-foreground mb-4">
               Ready to explore our products?
