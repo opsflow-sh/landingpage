@@ -5,6 +5,19 @@ import { useNavigate } from "react-router-dom";
 export default function Products() {
   const navigate = useNavigate();
 
+  const iconMap = {
+    rocket: Rocket,
+    target: Target,
+    star: Star,
+    building: Building2,
+  };
+
+  const renderIcon = (iconKey) => {
+    const IconComponent = iconMap[iconKey];
+    if (!IconComponent) return null;
+    return <IconComponent className="w-6 h-6 text-primary" />;
+  };
+
   return (
     <Layout>
       <div className="py-20 md:py-32">
