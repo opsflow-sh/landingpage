@@ -83,7 +83,7 @@ export default function Products() {
                           }`}
                         >
                           <div className="flex items-center gap-2 mb-3">
-                            <span className="text-2xl">{milestone.icon}</span>
+                            <milestone.icon className="w-6 h-6 text-primary" />
                             <p className="text-sm font-bold text-primary">
                               {milestone.date}
                             </p>
