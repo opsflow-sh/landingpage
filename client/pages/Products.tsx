@@ -22,25 +22,94 @@ export default function Products() {
             at scale
           </p>
 
-          {/* Horizontal Timeline */}
-          <div className="mb-16 overflow-x-auto pb-4">
-            <div className="flex items-center gap-2 min-w-max md:min-w-full md:justify-between px-4 md:px-0">
-              {[
-                { date: "Dec 18", items: ["AOF Open Source", "KubePilot CE"] },
-                { date: "Jan 12", items: ["KubePilot Plus"] },
-                { date: "Feb 1", items: ["Kubepilot+"] },
-                { date: "Mar 26", items: ["Opspilot EE"] },
-                { date: "Apr 22", items: ["OpsFlow Command"] }
-              ].map((milestone, idx) => (
-                <div key={idx} className="flex flex-col items-center">
-                  <div className="w-3 h-3 rounded-full bg-primary border-4 border-background mb-2" />
-                  <p className="text-xs font-bold text-primary whitespace-nowrap">{milestone.date}</p>
-                  <p className="text-xs text-foreground/70 text-center whitespace-nowrap mt-1">
-                    {milestone.items.join(" + ")}
-                  </p>
-                  {idx < 4 && <div className="hidden md:block w-12 h-0.5 bg-border/40 absolute ml-20" />}
-                </div>
-              ))}
+          {/* Product Roadmap Timeline */}
+          <div className="mb-20">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
+              Product Roadmap
+            </h2>
+
+            <div className="relative max-w-6xl mx-auto px-4">
+              {/* Timeline center line */}
+              <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-primary to-secondary transform -translate-x-1/2 hidden md:block" />
+
+              <div className="space-y-12 md:space-y-20">
+                {[
+                  {
+                    date: "Dec 18",
+                    title: "Agentic Ops Framework Launch",
+                    description: "Release AOF as fully open source. The framework built for DevOps folks by DevOps folks from the ground up.",
+                    position: "top",
+                    icon: "🚀"
+                  },
+                  {
+                    date: "Jan 2",
+                    title: "KubePilot CE Release",
+                    description: "Announce and launch KubePilot Community Edition. The only desktop-based Agentic Kubernetes Copilot.",
+                    position: "bottom",
+                    icon: "🎯"
+                  },
+                  {
+                    date: "Feb 1",
+                    title: "KubePilot Plus Goes Public",
+                    description: "Launch KubePilot Plus with advanced features for professional teams and enterprises.",
+                    position: "top",
+                    icon: "⭐"
+                  },
+                  {
+                    date: "Q2 2025",
+                    title: "Enterprise Solutions Coming",
+                    description: "More enterprise products and services launching throughout Q2 2025.",
+                    position: "bottom",
+                    icon: "🏢"
+                  }
+                ].map((milestone, idx) => {
+                  const isTop = milestone.position === "top";
+                  return (
+                    <div
+                      key={idx}
+                      className={`flex items-center gap-8 ${isTop ? "flex-row" : "flex-row-reverse"}`}
+                    >
+                      {/* Card */}
+                      <div className="flex-1">
+                        <div
+                          className={`p-6 rounded-lg border border-border/40 bg-card/50 hover:bg-card hover:border-primary/50 transition-all ${
+                            isTop ? "md:mr-auto md:max-w-sm" : "md:ml-auto md:max-w-sm"
+                          }`}
+                        >
+                          <div className="flex items-center gap-2 mb-3">
+                            <span className="text-2xl">{milestone.icon}</span>
+                            <p className="text-sm font-bold text-primary">{milestone.date}</p>
+                          </div>
+                          <h3 className="text-lg font-bold text-foreground mb-2">
+                            {milestone.title}
+                          </h3>
+                          <p className="text-sm text-foreground/70">
+                            {milestone.description}
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Timeline dot and connector */}
+                      <div className="relative flex flex-col items-center hidden md:flex">
+                        <div className="w-4 h-4 rounded-full bg-primary border-4 border-background shadow-lg" />
+                        {idx < 3 && (
+                          <div className="w-1 h-16 bg-gradient-to-b from-primary to-primary/50" />
+                        )}
+                      </div>
+
+                      {/* Empty space for desktop layout */}
+                      <div className="flex-1 hidden md:block" />
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* Mobile timeline indicator */}
+              <div className="md:hidden flex flex-col items-center mt-8">
+                <p className="text-sm text-foreground/60 text-center">
+                  Timeline visualization optimized for desktop view
+                </p>
+              </div>
             </div>
           </div>
 
