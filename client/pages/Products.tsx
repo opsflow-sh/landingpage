@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Rocket, Target, Star, Building2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export default function Products() {
