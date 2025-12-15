@@ -115,6 +115,67 @@ export default function Products() {
             </a>
           </div>
 
+          <div className="mt-20 pt-20 border-t border-border/40">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
+              Product Roadmap
+            </h2>
+            <p className="text-lg text-foreground/60 max-w-2xl mx-auto mb-12 text-center">
+              Here's what we're shipping next
+            </p>
+
+            <div className="max-w-3xl mx-auto">
+              <div className="space-y-6">
+                {[
+                  {
+                    date: "Dec 18",
+                    items: [
+                      "Release Agentic Ops Framework = Open Source",
+                      "Announce KubePilot CE"
+                    ],
+                    status: "upcoming"
+                  },
+                  {
+                    date: "Jan 12",
+                    items: ["KubePilot Plus goes Public Preview"],
+                    status: "upcoming"
+                  },
+                  {
+                    date: "Feb 1",
+                    items: ["Kubepilot + becomes Public"],
+                    status: "upcoming"
+                  },
+                  {
+                    date: "Mar 26",
+                    items: ["Opspilot EE Private Beta Launch"],
+                    status: "upcoming"
+                  },
+                  {
+                    date: "Apr 22",
+                    items: ["OpsFlow Command Center"],
+                    status: "upcoming"
+                  }
+                ].map((milestone, idx) => (
+                  <div key={idx} className="relative flex gap-6">
+                    <div className="flex flex-col items-center">
+                      <div className="w-4 h-4 rounded-full bg-primary border-4 border-background" />
+                      {idx < 4 && <div className="w-1 h-16 bg-border/40 mt-2" />}
+                    </div>
+                    <div className="pb-6 flex-1">
+                      <p className="text-sm font-bold text-primary mb-2">{milestone.date}</p>
+                      <div className="space-y-2">
+                        {milestone.items.map((item, itemIdx) => (
+                          <p key={itemIdx} className="text-foreground/80 text-sm">
+                            {item}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
           <p className="text-center text-foreground/60 text-sm mt-12">
             More products launching soon...
           </p>
