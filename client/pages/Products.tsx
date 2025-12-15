@@ -35,7 +35,7 @@ export default function Products() {
               <div className="space-y-12 md:space-y-20">
                 {[
                   {
-                    date: "Dec 18",
+                    date: "Dec 18, 2025",
                     title: "Agentic Ops Framework Launch",
                     description:
                       "Release AOF as fully open source. The framework built for DevOps folks by DevOps folks from the ground up.",
@@ -43,7 +43,7 @@ export default function Products() {
                     icon: "🚀",
                   },
                   {
-                    date: "Jan 2",
+                    date: "Jan 2, 2026",
                     title: "KubePilot CE Release",
                     description:
                       "Announce and launch KubePilot Community Edition. The only desktop-based Agentic Kubernetes Copilot.",
@@ -51,7 +51,7 @@ export default function Products() {
                     icon: "🎯",
                   },
                   {
-                    date: "Feb 1",
+                    date: "Feb 1, 2026",
                     title: "KubePilot Plus Goes Public",
                     description:
                       "Launch KubePilot Plus with advanced features for professional teams and enterprises.",
@@ -59,10 +59,10 @@ export default function Products() {
                     icon: "⭐",
                   },
                   {
-                    date: "Q2 2025",
+                    date: "Q2 2026",
                     title: "Enterprise Solutions Coming",
                     description:
-                      "More enterprise products and services launching throughout Q2 2025.",
+                      "More enterprise products and services launching throughout Q2 2026.",
                     position: "bottom",
                     icon: "🏢",
                   },
