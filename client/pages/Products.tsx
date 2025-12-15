@@ -83,7 +83,9 @@ export default function Products() {
                           }`}
                         >
                           <div className="flex items-center gap-2 mb-3">
-                            <milestone.icon className="w-6 h-6 text-primary" />
+                            {milestone.icon && (
+                              <milestone.icon className="w-6 h-6 text-primary" />
+                            )}
                             <p className="text-sm font-bold text-primary">
                               {milestone.date}
                             </p>
