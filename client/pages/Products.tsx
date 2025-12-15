@@ -40,7 +40,7 @@ export default function Products() {
                     description:
                       "Release AOF as fully open source. The framework built for DevOps folks by DevOps folks from the ground up.",
                     position: "top",
-                    icon: "🚀",
+                    icon: Rocket,
                   },
                   {
                     date: "Jan 2, 2026",
@@ -48,7 +48,7 @@ export default function Products() {
                     description:
                       "Announce and launch KubePilot Community Edition. The only desktop-based Agentic Kubernetes Copilot.",
                     position: "bottom",
-                    icon: "🎯",
+                    icon: Target,
                   },
                   {
                     date: "Feb 1, 2026",
@@ -56,7 +56,7 @@ export default function Products() {
                     description:
                       "Launch KubePilot Plus with advanced features for professional teams and enterprises.",
                     position: "top",
-                    icon: "⭐",
+                    icon: Star,
                   },
                   {
                     date: "Q2 2026",
@@ -64,7 +64,7 @@ export default function Products() {
                     description:
                       "More enterprise products and services launching throughout Q2 2026.",
                     position: "bottom",
-                    icon: "🏢",
+                    icon: Building2,
                   },
                 ].map((milestone, idx) => {
                   const isTop = milestone.position === "top";
