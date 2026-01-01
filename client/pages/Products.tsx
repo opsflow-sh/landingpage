@@ -176,24 +176,6 @@ export default function Products() {
               </p>
             </a>
             <a
-              href="http://github.com/opsflow-sh/opsflow"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-6 rounded-lg border border-border/40 bg-card/30 text-left hover:border-secondary/50 hover:bg-card transition-all"
-            >
-              <h3 className="text-lg font-bold text-foreground mb-2">
-                OpsFlow
-              </h3>
-              <p className="text-foreground/70 text-sm">
-                Enterprise platform built on Agentic Ops Framework for managing
-                complex agentic workflows at scale with advanced monitoring and
-                orchestration.
-              </p>
-              <p className="text-secondary text-xs mt-4 font-semibold">
-                Coming Soon
-              </p>
-            </a>
-            <a
               href="https://devopsify.ai"
               target="_blank"
               rel="noopener noreferrer"
