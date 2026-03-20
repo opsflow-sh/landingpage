@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import { Linkedin, ExternalLink } from "lucide-react";
+import { Linkedin, Users } from "lucide-react";
 
 export default function Team() {
   const founders = [
@@ -13,19 +13,11 @@ export default function Team() {
     },
     {
       name: "Gourav Shah",
-      title: "Co-Founder & Chief Product Officer",
+      title: "Co-Founder & Platform Architect",
       bio: "Leading DevOps domain expert with 18+ years hands-on expertise in cloud infrastructure, container orchestration, and platform engineering.\n\n• 228,700+ students on Udemy with 5,400+ reviews—one of the most recognized educators in DevOps\n• Founder of School of DevOps™ and Linux Foundation Course Developer & Maintainer\n• Author of Ansible Playbook Essentials (Packt Publishing)\n• Corporate trainer for Fortune 500: Visa, Adobe, Walmart Labs, Cisco, Nutanix, Rakuten, Citrix\n• Deep expertise in Kubernetes, MLOps, AI infrastructure, and cloud-native architectures\n• CKA Certified | Shivaji University",
       linkedinUrl: "https://www.linkedin.com/in/gouravshah/",
       imageUrl:
         "https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Fc3c5f8faf5a94ef0bb6a60a9d701ac8a?format=webp&width=800",
-    },
-    {
-      name: "Prashant Sasatte",
-      title: "Co-Founder & Chief Technology Officer",
-      bio: "Technical leader and serial entrepreneur with elite academic credentials and deep expertise in AI, optimization, and enterprise systems.\n\n• Founder of Olelo Intelligent Systems (privacy-first enterprise smart voice assistant solutions)\n• Founder of Cogmeta Intelligent Systems (audience intelligence platform)\n• Founded Interior Point Analytics\n• Principal Analytics Engineer at Exponential\n• Expert in statistical modeling, optimization algorithms, and secure AI architecture\n• Master of Mathematics in Computer Science, University of Waterloo (4.0/4.0)\n• B.E. Computer Science, BITS Pilani (9.92/10.00)",
-      linkedinUrl: "https://www.linkedin.com/in/prashantsasatte/",
-      imageUrl:
-        "https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2F1cd7901e1bab4583962976450b937efb?format=webp&width=800",
     },
   ];
 
@@ -35,23 +27,24 @@ export default function Team() {
         {/* Hero Section */}
         <div className="container mx-auto max-w-6xl px-4 mb-20">
           <div className="text-center mb-12">
-            <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              👥 Our Team
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+              <Users className="w-4 h-4" />
+              Our Team
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Meet the Founding Team
             </h1>
             <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
               Industry veterans combining enterprise expertise, deep domain
-              knowledge, and technical excellence to transform operations with
-              agentic intelligence.
+              knowledge, and technical excellence to build architecture
+              governance for the FINOS ecosystem.
             </p>
           </div>
         </div>
 
         {/* Team Grid */}
         <div className="container mx-auto max-w-6xl px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {founders.map((founder, index) => (
               <div
                 key={index}
@@ -133,12 +126,12 @@ export default function Team() {
               Our Mission
             </h2>
             <p className="text-lg text-foreground/70 mb-8">
-              We're building the next generation of operational intelligence.
-              Our combined expertise spans enterprise strategy, deep DevOps and
-              operations knowledge, and cutting-edge technology. Together, we're
-              creating tools that empower teams to manage complex operations
-              with agentic intelligence—keeping humans informed, in control, and
-              focused on what matters most.
+              We're building the platform that bridges architecture design and
+              runtime governance for the FINOS ecosystem. Our combined expertise
+              spans enterprise strategy, cloud-native infrastructure, and open
+              standards. Together, we're creating tools that help organizations
+              design, validate, and govern their architectures—from CALM spec
+              to production.
             </p>
           </div>
         </div>

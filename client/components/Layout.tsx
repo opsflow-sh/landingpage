@@ -35,7 +35,7 @@ const Header = () => {
             to="/community"
             className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
           >
-            Community
+            Open Source
           </Link>
           <Link
             to="/team"
@@ -53,7 +53,7 @@ const Header = () => {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/kubeagentics/kubeagentics"
+            href="https://github.com/opsflo"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground/60 hover:text-foreground transition-colors"
@@ -73,18 +73,17 @@ const Footer = () => {
   return (
     <footer className="border-t border-border/40 bg-muted/30">
       <div className="container mx-auto max-w-7xl px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-8">
           <div className="flex flex-col justify-start">
             <div className="mb-4 flex justify-start">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2F662de63651b548e396efce312fe39372?format=webp&width=800"
-                alt="AOF Logo"
-                className="w-20 h-20"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa63454bd5d0647989a1c51c52f5a6a85%2Ff3ce7f74d6fa4e8ba867dfa0afd51b99"
+                alt="OpsFlow"
+                className="h-8"
               />
             </div>
-            <h3 className="font-bold text-foreground mb-4">OpsFlow</h3>
             <p className="text-sm text-foreground/60">
-              Building the future of Agentic Ops Workflows
+              Architecture Governance for the FINOS Ecosystem
             </p>
           </div>
           <div className="flex flex-col justify-start">
@@ -92,12 +91,22 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://kubepilot.com/"
+                  href="https://github.com/opsflo/calmstudio"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-foreground/60 hover:text-foreground transition-colors"
                 >
-                  kubepilot
+                  CalmStudio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/opsflo/calmguard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-foreground/60 hover:text-foreground transition-colors"
+                >
+                  CalmGuard
                 </a>
               </li>
               <li>
@@ -105,47 +114,45 @@ const Footer = () => {
                   to="/products"
                   className="text-sm text-foreground/60 hover:text-foreground transition-colors"
                 >
-                  Command Center
+                  OpsFlow Platform
                 </Link>
               </li>
             </ul>
           </div>
           <div className="flex flex-col justify-start">
-            <h4 className="font-semibold text-foreground mb-4">Community</h4>
+            <h4 className="font-semibold text-foreground mb-4">Ecosystem</h4>
             <ul className="space-y-2">
               <li>
                 <a
-                  href="http://agenticops.org/"
+                  href="https://www.finos.org/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-foreground/60 hover:text-foreground transition-colors"
                 >
-                  Alliance
+                  FINOS
                 </a>
               </li>
               <li>
                 <a
-                  href="http://agenticops.community/"
+                  href="https://github.com/finos/architecture-as-code"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-foreground/60 hover:text-foreground transition-colors"
                 >
-                  Community
+                  CALM Spec
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/finos/fluxnova"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-foreground/60 hover:text-foreground transition-colors"
+                >
+                  FluxNova
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/en/4/46/Make_In_India.png"
-              alt="Make in India, Built for World Logo"
-              className="h-20 w-auto mb-3"
-            />
-            <p className="text-xs text-center text-foreground/60">
-              Made in India,
-              <br />
-              Built for the World
-            </p>
           </div>
           <div className="flex flex-col justify-start">
             <h4 className="font-semibold text-foreground mb-4">Connect</h4>
@@ -159,7 +166,7 @@ const Footer = () => {
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="https://github.com/kubeagentics/kubeagentics"
+                href="https://github.com/opsflo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground/60 hover:text-foreground transition-colors"
@@ -179,7 +186,7 @@ const Footer = () => {
         </div>
         <div className="border-t border-border/40 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-foreground/60">
-            © 2025 OpsFlow.sh. All rights reserved.
+            © 2026 OpsFlow.sh. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a
