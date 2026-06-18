@@ -49,6 +49,12 @@ const Header = () => {
           >
             Docs
           </Link>
+          <Link
+            to="/academy"
+            className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
+          >
+            Academy
+          </Link>
         </nav>
 
         <div className="flex items-center gap-4">
@@ -73,7 +79,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-border/40 bg-muted/30">
       <div className="container mx-auto max-w-7xl px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-8">
           <div className="flex flex-col justify-start">
             <div className="mb-4 flex justify-start">
               <img
@@ -150,6 +156,27 @@ const Footer = () => {
                   className="text-sm text-foreground/60 hover:text-foreground transition-colors"
                 >
                   FluxNova
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col justify-start">
+            <h4 className="font-semibold text-foreground mb-4">Education</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  to="/academy"
+                  className="text-sm text-foreground/60 hover:text-foreground transition-colors"
+                >
+                  Architecture as Code
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="/academy#register"
+                  className="text-sm text-foreground/60 hover:text-foreground transition-colors"
+                >
+                  Register Interest
                 </a>
               </li>
             </ul>

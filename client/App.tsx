@@ -12,6 +12,7 @@ import Products from "./pages/Products";
 import Community from "./pages/Community";
 import Docs from "./pages/Docs";
 import Team from "./pages/Team";
+import Academy from "./pages/Academy";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/community" element={<Community />} />
           <Route path="/team" element={<Team />} />
           <Route path="/docs" element={<Docs />} />
+          <Route path="/academy" element={<Academy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
