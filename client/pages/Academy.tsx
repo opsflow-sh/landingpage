@@ -123,14 +123,16 @@ export default function Academy() {
     e.preventDefault();
     setFormState("submitting");
     try {
-      await fetch("/", {
+      const res = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
           "form-name": "academy-interest",
+          "bot-field": "",
           ...formData,
         }).toString(),
       });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
       setFormState("success");
     } catch {
       setFormState("error");
@@ -360,10 +362,13 @@ export default function Academy() {
               onSubmit={handleSubmit}
               className="max-w-md mx-auto rounded-2xl border border-border/60 bg-card p-8 flex flex-col gap-5"
             >
+              <input type="hidden" name="bot-field" />
+
               <div className="flex flex-col gap-1.5">
-                <label className="text-sm font-medium text-foreground">Name</label>
+                <label htmlFor="academy-name" className="text-sm font-medium text-foreground">Name</label>
                 <input
                   type="text"
+                  id="academy-name"
                   name="name"
                   required
                   value={formData.name}
@@ -374,9 +379,10 @@ export default function Academy() {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <label className="text-sm font-medium text-foreground">Email</label>
+                <label htmlFor="academy-email" className="text-sm font-medium text-foreground">Email</label>
                 <input
                   type="email"
+                  id="academy-email"
                   name="email"
                   required
                   value={formData.email}
@@ -387,8 +393,9 @@ export default function Academy() {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <label className="text-sm font-medium text-foreground">Track</label>
+                <label htmlFor="academy-track" className="text-sm font-medium text-foreground">Track</label>
                 <select
+                  id="academy-track"
                   name="track"
                   value={formData.track}
                   onChange={(e) => setFormData({ ...formData, track: e.target.value })}
@@ -401,8 +408,9 @@ export default function Academy() {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <label className="text-sm font-medium text-foreground">Preferred Format</label>
+                <label htmlFor="academy-format" className="text-sm font-medium text-foreground">Preferred Format</label>
                 <select
+                  id="academy-format"
                   name="format"
                   value={formData.format}
                   onChange={(e) => setFormData({ ...formData, format: e.target.value })}
