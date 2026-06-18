@@ -6,7 +6,6 @@ import {
   Users,
   Building2,
   CheckCircle,
-  ChevronDown,
   Code2,
   Shield,
   Cpu,
