@@ -12,6 +12,23 @@
   </head>
 
   <body>
+    <!-- Hidden form for Netlify bot detection (React SPA workaround) -->
+    <form name="academy-interest" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="text" name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <select name="track">
+        <option value="associate">Associate</option>
+        <option value="practitioner">Practitioner</option>
+        <option value="architect">Architect</option>
+      </select>
+      <select name="format">
+        <option value="self-paced">Self-Paced Online</option>
+        <option value="live-workshop">Live Workshop</option>
+        <option value="corporate">Corporate / In-House</option>
+      </select>
+    </form>
+
     <div id="root"></div>
 
     <script type="module" src="/client/App.tsx"></script>
