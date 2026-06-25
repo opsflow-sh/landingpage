@@ -12,6 +12,27 @@
   </head>
 
   <body>
+    <script>
+      // Decode path encoded by 404.html and restore to browser history
+      // so React Router picks up the correct route on direct navigation.
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            });
+          window.history.replaceState(
+            null,
+            null,
+            decoded.shift() +
+              (decoded.length ? "?" + decoded.join("&") : "") +
+              l.hash
+          );
+        }
+      })(window.location);
+    </script>
     <!-- Hidden form for Netlify bot detection (React SPA workaround) -->
     <form name="academy-interest" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
       <input type="text" name="bot-field" />
