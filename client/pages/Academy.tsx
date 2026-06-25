@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import { Layout } from "@/components/Layout";
 import {
   ArrowRight,
@@ -111,33 +111,7 @@ const PERSONAS = [
 ];
 
 export default function Academy() {
-  const [formState, setFormState] = useState<"idle" | "submitting" | "success" | "error">("idle");
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    track: "associate",
-    format: "self-paced",
-  });
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormState("submitting");
-    try {
-      const res = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          "form-name": "academy-interest",
-          "bot-field": "",
-          ...formData,
-        }).toString(),
-      });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      setFormState("success");
-    } catch {
-      setFormState("error");
-    }
-  };
+  const [state, handleSubmit] = useForm("xkolodea");
 
   return (
     <Layout>
@@ -351,7 +325,7 @@ export default function Academy() {
             </p>
           </div>
 
-          {formState === "success" ? (
+          {state.succeeded ? (
             <div className="max-w-md mx-auto text-center rounded-2xl border border-primary/30 bg-primary/5 p-10">
               <CheckCircle className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-bold text-foreground mb-2">You're on the list</h3>
@@ -362,8 +336,6 @@ export default function Academy() {
               onSubmit={handleSubmit}
               className="max-w-md mx-auto rounded-2xl border border-border/60 bg-card p-8 flex flex-col gap-5"
             >
-              <input type="hidden" name="bot-field" />
-
               <div className="flex flex-col gap-1.5">
                 <label htmlFor="academy-name" className="text-sm font-medium text-foreground">Name</label>
                 <input
@@ -371,8 +343,6 @@ export default function Academy() {
                   id="academy-name"
                   name="name"
                   required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   placeholder="Your name"
                   className="px-4 py-2.5 rounded-lg border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/40 placeholder:text-foreground/30"
                 />
@@ -385,11 +355,10 @@ export default function Academy() {
                   id="academy-email"
                   name="email"
                   required
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   placeholder="you@company.com"
                   className="px-4 py-2.5 rounded-lg border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/40 placeholder:text-foreground/30"
                 />
+                <ValidationError field="email" errors={state.errors} className="text-sm text-destructive" />
               </div>
 
               <div className="flex flex-col gap-1.5">
@@ -397,8 +366,7 @@ export default function Academy() {
                 <select
                   id="academy-track"
                   name="track"
-                  value={formData.track}
-                  onChange={(e) => setFormData({ ...formData, track: e.target.value })}
+                  defaultValue="associate"
                   className="px-4 py-2.5 rounded-lg border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/40"
                 >
                   <option value="associate">Associate (~8 hrs)</option>
@@ -412,8 +380,7 @@ export default function Academy() {
                 <select
                   id="academy-format"
                   name="format"
-                  value={formData.format}
-                  onChange={(e) => setFormData({ ...formData, format: e.target.value })}
+                  defaultValue="self-paced"
                   className="px-4 py-2.5 rounded-lg border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/40"
                 >
                   <option value="self-paced">Self-Paced Online</option>
@@ -422,17 +389,15 @@ export default function Academy() {
                 </select>
               </div>
 
-              {formState === "error" && (
-                <p className="text-sm text-destructive">Submission failed. Please try again or email us directly.</p>
-              )}
+              <ValidationError errors={state.errors} className="text-sm text-destructive" />
 
               <button
                 type="submit"
-                disabled={formState === "submitting"}
+                disabled={state.submitting}
                 className="px-6 py-3 rounded-lg bg-sky-400/60 text-white font-semibold hover:bg-sky-400/80 transition-all disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2"
               >
-                {formState === "submitting" ? "Sending…" : "Register Interest"}
-                {formState !== "submitting" && <ArrowRight className="w-4 h-4" />}
+                {state.submitting ? "Sending…" : "Register Interest"}
+                {!state.submitting && <ArrowRight className="w-4 h-4" />}
               </button>
             </form>
           )}
